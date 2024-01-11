@@ -85,36 +85,24 @@ const SidebarV2 = () => {
               Dashboard
             </Nav.Item>
             {/* styles */}
-            <Nav.Menu
-              placement="rightStart"
+            <Nav.Item
               eventKey="2"
-              title="Styles"
               icon={<Icon as={GiClothes} />}
+              as={NavLink}
+              to="/styles/listofstyle"
             >
-              <Nav.Item eventKey="2-1" as={NavLink} to="/styles/listofstyle">
-                List Of Styles
-              </Nav.Item>
-              <Nav.Item eventKey="2-2" as={NavLink} to="/styles/addstyle">
-                Add Style
-              </Nav.Item>
-              <Nav.Item eventKey="2-3" as={NavLink} to="/styles/styleAssign">
-                Style Assign
-              </Nav.Item>
-            </Nav.Menu>
+              Styles
+            </Nav.Item>
+
             {/* PO */}
-            <Nav.Menu
-              placement="rightStart"
+            <Nav.Item
               eventKey="3"
-              title="PO"
               icon={<ListIcon />}
+              as={NavLink}
+              to="/po/poLists"
             >
-              <Nav.Item eventKey="3-1" as={NavLink} to="/po/poLists">
-                List Of PO
-              </Nav.Item>
-              <Nav.Item eventKey="3-2" as={NavLink} to="/po/addpo">
-                Add PO
-              </Nav.Item>
-            </Nav.Menu>
+              Po List
+            </Nav.Item>
             {/* PP & Bulk Status */}
             <Nav.Menu
               placement="rightStart"
@@ -151,22 +139,14 @@ const SidebarV2 = () => {
               PP Submission
             </Nav.Item>
             {/* Courier */}
-            <Nav.Menu
-              placement="rightStart"
+            <Nav.Item
               eventKey="7"
-              title="Courier"
               icon={<Icon as={FaRegPaperPlane} />}
+              as={NavLink}
+              to="/ppSubmission"
             >
-              <Nav.Item eventKey="7-1" as={NavLink} to="/courier/courierLists">
-                Courier Lists
-              </Nav.Item>
-              <Nav.Item eventKey="7-2" as={NavLink} to="/courier/noOfCourier">
-                No Of Courier
-              </Nav.Item>
-              <Nav.Item eventKey="6-3" as={NavLink} to="/courier/addcourier">
-                Add Courier
-              </Nav.Item>
-            </Nav.Menu>
+              Courier Lists
+            </Nav.Item>
             {/*Factory & Port*/}
             <Nav.Item
               eventKey="8"
@@ -189,19 +169,14 @@ const SidebarV2 = () => {
             </Nav.Item>
             {/* Users */}
             {(role === "ADMIN" || role === "SUPERADMIN") && (
-              <Nav.Menu
-                placement="rightStart"
+              <Nav.Item
                 eventKey="10"
-                title="Users"
-                icon={<PeoplesIcon />}
+                icon={<Icon as={PeoplesIcon} />}
+                as={NavLink}
+                to="/factoryPort"
               >
-                <Nav.Item eventKey="10-1" as={NavLink} to="/users/userLists">
-                  User Lists
-                </Nav.Item>
-                <Nav.Item eventKey="10-2" as={NavLink} to="/users/addUser">
-                  Add User
-                </Nav.Item>
-              </Nav.Menu>
+                User Lists
+              </Nav.Item>
             )}
           </Nav>
         </Sidenav.Body>
