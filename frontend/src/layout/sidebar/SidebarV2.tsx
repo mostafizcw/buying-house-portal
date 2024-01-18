@@ -143,7 +143,7 @@ const SidebarV2 = () => {
               eventKey="7"
               icon={<Icon as={FaRegPaperPlane} />}
               as={NavLink}
-              to="/ppSubmission"
+              to="/courier/courierLists"
             >
               Courier Lists
             </Nav.Item>
@@ -173,7 +173,7 @@ const SidebarV2 = () => {
                 eventKey="10"
                 icon={<Icon as={PeoplesIcon} />}
                 as={NavLink}
-                to="/factoryPort"
+                to="/users/userLists"
               >
                 User Lists
               </Nav.Item>

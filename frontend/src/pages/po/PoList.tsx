@@ -322,7 +322,7 @@ const PoLists = () => {
               >
                 <Button
                   appearance="default"
-                  className="bg-white hover:bg-white outline-gray-200 outline outline-1 font-medium text-gray-700 !rounded hover:text-gray-700 focus-within:text-gray-700 focus-within:bg-white"
+                  className="bg-white hover:bg-white outline-gray-300 outline outline-1 font-medium text-gray-700 !rounded hover:text-gray-700 focus-within:text-gray-700 focus-within:bg-white"
                   // color="blue"
                   startIcon={<DocPassIcon className="text-sm" />}
                   endIcon={<ArrowDownLineIcon className="text-xl" />}

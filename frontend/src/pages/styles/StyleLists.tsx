@@ -229,7 +229,7 @@ const StyleLists = () => {
               >
                 <Button
                   appearance="default"
-                  className="bg-white hover:bg-white outline-gray-200 outline outline-1 font-medium text-gray-700 !rounded hover:text-gray-700 focus-within:text-gray-700 focus-within:bg-white"
+                  className="bg-white hover:bg-white outline-gray-300 outline outline-1 font-medium text-gray-700 !rounded hover:text-gray-700 focus-within:text-gray-700 focus-within:bg-white"
                   // color="blue"
                   startIcon={<DocPassIcon className="text-sm" />}
                   endIcon={<ArrowDownLineIcon className="text-xl" />}
@@ -240,7 +240,7 @@ const StyleLists = () => {
             </ButtonToolbar>
           </div>
           <Link to="/styles/styleAssign">
-            <button className="border-[#0284c7] border text-[#0284c7] text-sm font-semibold py-2 px-2.5 rounded-md">
+            <button className=" bg-white text-gray-700 border border-gray-300 text-sm font-semibold py-2 px-2.5 rounded-md">
               Style Assign
             </button>
           </Link>
@@ -260,7 +260,7 @@ const StyleLists = () => {
 
       <div className="mt-4 shadow-lg mb-20 shadow-[#eff1f3] border rounded-lg">
         {/* search and filter */}
-        <div className="p-5 ">
+        <div className="p-5">
           <div className="flex justify-between gap-4">
             <div className="w-[35%]">
               <label htmlFor="voice-search" className="sr-only">
